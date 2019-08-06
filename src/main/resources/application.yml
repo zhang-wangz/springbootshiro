@@ -1,0 +1,41 @@
+
+
+
+spring:
+#  profiles:
+#    active: dev
+#    include: shiro
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/springboot_test?characterEncoding=utf-8&useSSL=false
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+
+
+
+
+#  shiro:
+#    sessionManager:
+#      sessionIdCookieEnabled: true
+#      sessionIdUrlRewritingEnabled: true
+#
+#    unauthorizedUrl: /login
+#
+#    web:
+#      enabled: true #表示开启shiro
+#
+#    successUrl: /home
+#    loginUrl: /login
